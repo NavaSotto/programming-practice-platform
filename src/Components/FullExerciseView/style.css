@@ -1,0 +1,231 @@
+/*fullexerciseview*/
+
+
+
+.titleClass {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  align-items: center;
+  vertical-align:unset;
+
+}
+.exClass{
+  max-width: 600px;
+  margin-top: 20px;
+  background-color:#eeeeee;
+  font-family: 'Courier New', monospace;
+
+}
+
+.solutionClass code {
+  font-family: 'Courier New', monospace;
+  line-height: 100%;
+  padding: 0px;
+  letter-spacing: -0.05em;
+  word-break: normal;
+  text-align: left;
+  overflow: auto;
+  text-align: left;
+ 
+}
+.tagsDiv{
+  max-width: 500px;
+  align-items: center;
+}
+
+
+
+.tags{
+  color: black;
+  font-size: 11px;
+  padding: 3px;
+  margin: 3px;
+  color: white;
+  border-radius: 40px;
+  padding: 0px 3px 0px 7px;
+  margin-right: 1px;
+  margin-bottom:5px;
+  justify-content: center;
+  display: inline-block;
+  width: max-content;
+
+
+}
+.imgClass {
+  margin-right: 20px;
+}
+h2 {
+  margin: 0;
+}
+.diffClass {
+  color: black;
+  font-size: 15px;
+  font-weight: normal;
+  float: left;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin-top:20px;
+  font-family: 'Courier New', monospace;
+
+}
+.exersiceDetails{
+height: 100px;
+padding-top: 10px;
+font-family: 'Courier New', monospace;
+
+}
+
+.solButton{
+ padding: 3px;
+margin:3px;
+margin-left: 10px;
+text-align: left;
+flex: 1 1 auto;
+  margin: 10px;
+  padding: 5px;
+  margin-left: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(15, 12, 12);
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,  hsl(224, 85%, 66%),
+  hsl(269, 85%, 66%),
+  hsl(314, 85%, 66%),
+  hsl(359, 85%, 66%),hsl(44, 85%, 66%),
+  hsl(89, 85%, 66%),
+  hsl(134, 85%, 66%),
+  hsl(179, 85%, 66%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #eeeeee inset;
+  
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  
+
+}
+.solButton:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+
+
+
+
+.mainDiv {
+  max-width: 700px;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* background-color: rgb(170, 210, 214); */
+  
+  text-align: left;
+  font-family: 'Courier New', monospace;
+}
+
+.marginClass{
+  margin-top: 80px;
+
+}
+.flexDivClass{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.close-Class {
+  /* visibility: hidden; */
+  display: none; /*without take place*/
+}
+.open-Class {
+  /* visibility: visible; */
+  display: flex;
+
+  align-content: flex-start;
+    flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+.hint{
+  color: rgb(29, 29, 30);
+  padding: 10px;
+  margin-top: 15px;
+  max-width: 600px;
+
+
+
+ 
+}
+hr{
+  height: 0.2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+.solutionClass  {
+  /* background-color: rgb(40, 42, 54); */
+  background-color: #eeeeee;
+
+  vertical-align: initial;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 600px;
+  margin-top: 10px;
+  flex-direction: row !important;
+  align-items: center;
+  margin-bottom: 40px;
+
+
+ 
+
+} 
+.hideClass{
+  display: none;
+}
+
+
+.sourcesClass {
+  background-color:transparent;;
+  max-width: 600px;
+  margin-left: 13px;
+  /*padding: 5px;*/
+  list-style: initial;
+  /*border: 1px solid black;*/
+}
+/* span {
+  width: 500px;
+} */
+p{
+  margin-bottom: 20px;
+}
+
+.content{
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.copy{
+  color: rgb(16, 78, 61);
+
+}
+.Algorithms{
+  background-color: red;
+}
+.Sortandsearch{
+  background-color: rgb(32, 90, 69);
+}
+.datastructures{background-color: rgb(58, 34, 152);
+}
+.Functional{
+  background-color: rgb(165, 40, 117);
+}
+
+

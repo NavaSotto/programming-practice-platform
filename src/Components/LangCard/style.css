@@ -1,0 +1,32 @@
+.langCardClass {
+  margin: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 100px;
+  align-items: center;
+  vertical-align: middle;
+  font-family: cursive;
+  justify-content: space-around;
+  align-content: space-around;
+  max-width: 1200;
+  cursor: pointer;
+  transition: 3s ease-in-out;
+  transform-style: preserve-3d;
+  border-radius: 80px;
+  /* background-image: linear-gradient( #c0d9e4, #518a98), radial-gradient(circle at top left, #769aff 8.23%,#ffdd40 25.83%,#f19994 51.91%,#47cf73 68.56%); */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 2px; /*thickness of border*/
+
+  
+}
+
+
+
+
+img {
+  height: 70px;
+  width: 70px;
+}

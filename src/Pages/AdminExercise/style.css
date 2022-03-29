@@ -1,0 +1,233 @@
+/*admin-exersice */
+
+.exersiceDetailsClass {
+  margin-top: 100px;
+  border: 1px solid black;
+  max-width: 700px;
+  padding: 10px;
+  align-items: center;
+   justify-content: space-around; 
+margin-top: 90px;
+  /* background-color: rgb(170, 210, 214); */
+  text-align: left;
+/*   
+  border-radius: var(3px);
+ 
+  border-radius: 1px;
+ 
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border:3px solid transparent;
+  border-image-slice: 1;
+  border: 3px solid transparent;
+-webkit-border-image: -webkit-linear-gradient(
+  60deg,  
+    hsl(224, 85%, 66%),
+  hsl(269, 85%, 66%),
+  hsl(314, 85%, 66%),
+  hsl(359, 85%, 66%),
+  hsl(44, 85%, 66%),
+  hsl(89, 85%, 66%),
+  hsl(134, 85%, 66%),
+  hsl(179, 85%, 66%)
+);
+border-image-slice: 1;
+z-index: -3; */
+  
+}
+.exersiceDetailsClass div{
+  /* width: 300px; */
+}
+
+/*fullexerciseview*/
+
+.sources{
+  display: flex;
+  flex-direction: row;
+  background-color: #d8d9de;
+  max-width: 600px;
+
+}
+.close {
+  /* visibility: hidden; */
+  display: none; /*without take place*/
+}
+.open {
+  /* visibility: visible; */
+  align-items: center;
+  display: flex;
+  justify-content: center; /* here we just put the only child div to the center */
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+li{
+  list-style: none;
+}
+.inputForm{
+  padding: 5px;
+  margin: 5px;
+  background-color: #d8d9de;
+  min-width: 200px;
+}
+
+
+
+
+.filed{
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 5px 2px, 5px 2px, 2px 5px, 2px 5px;
+  padding: 3px;
+  align-content: center;
+  margin-bottom: 10px;
+  min-width: 220px;
+  border-radius: var(3px);
+  border-radius: 1px;
+  border:2px dotted black;
+  border-image-slice: 1;
+
+border-image-slice: 1;
+/* z-index: -3; */
+  
+
+}
+.filed label{
+color:rgb(23, 23, 91);
+font-size: 12px;
+margin: 15px;
+  font-family: 'verdana', monospace;
+
+}
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 13px;
+  
+align-items: center;
+justify-content: space-between
+
+
+
+}
+.btn{
+ 
+    padding: 0px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+
+}
+.plus{
+  background-color: #04AA6D;
+  border-radius:50%;
+  width:25px;
+  height:25px;
+
+margin: 15px;
+
+}
+.minus{
+background-color: #f44336;
+width:20px;
+height:20px;
+}
+.plus:hover{
+  background-color: green;
+
+}
+.minus:hover{
+  background-color: rgb(223, 113, 113);
+
+}
+
+
+
+div{
+  padding: 3px;
+}
+.title
+{
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color:  hsl(359, 85%, 66%);
+  font-family: 'Helvetica Neue', sans-serif; font-size: 33px; font-weight: 100; line-height: 50px; letter-spacing: 1px;
+}
+
+.stretch{
+  align-items: stretch;
+
+}
+.flex1{
+  flex:6;
+}
+.flex2{
+  flex:1;
+}
+.flex3{
+  flex:1;
+}
+.icons{
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+.colum{
+  display: flex;
+  flex-direction: column;
+}
+textarea{
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-content: center;
+  margin-left: 15px;
+  min-height: 20px;
+  background-color: #d8d9de;
+
+
+
+}
+.filed textarea{
+margin-left:30px
+
+
+}
+.details{
+  min-height: 100px;
+
+}
+.update-btn{
+  width: 120px;
+  height: 50px;
+  border: 3px solid rgb(70, 159, 169);
+  border-radius: 25px;
+  margin: 20px;
+  background-color: none;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.32s ease;
+  box-shadow: rgba(0 0 0 / 29%) 0px 22px 70px 4px;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.update-btn:hover{
+  width: 200px;
+  border: 3px solid rgb(21, 82, 99);
+  color: rgb(8, 89, 93);
+}

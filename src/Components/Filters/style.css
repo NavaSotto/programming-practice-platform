@@ -1,0 +1,65 @@
+/* filter exersice */
+
+.filterClass {
+  display: flex;
+  flex-direction: row;
+
+
+}
+.searchInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+
+}
+.searchInput input::placeholder {
+  height: 30px;
+  color: black;
+}
+.searchInput input {
+  height: 30px;
+}
+
+input::placeholder {
+  color: rgb(176, 85, 85);
+  font-size: 1em;
+  font-style: italic;
+  text-decoration: none;
+  outline: none;
+  z-index: 2;
+
+}
+
+.boxClass {
+  width: 250px;
+  margin: 10px;
+  background-color:transparent;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+}
+select {
+  width: 200px;
+  background-color: rgb(250, 245, 250);
+  padding: 5px;
+  margin: 5px;
+  height: 30px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+option {
+  width: 200px;
+  background-color: rgb(241, 239, 236);
+}
+label {
+  font-size: 12px;
+  color: aliceblue;
+  font-family: cursive;
+}
+.icon{
+  color: aliceblue;
+}

@@ -1,0 +1,155 @@
+/*home-page */
+
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+body{
+  background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+  background-size:auto;
+  z-index: -1;
+
+ }
+
+/*=============animation=======================*/
+
+.gradient-border {
+  position: relative;
+  border-radius: var(3px);
+  position: relative;
+  justify-content: center;
+  width: 700px;
+  height: 550px;
+  font-family: Lato, sans-serif;
+  font-size: 14PX;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 1px;
+  margin-top: 80px;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+background: rgb(0, 0, 0,0.72);
+  border:3px solid transparent;
+  border-image-slice: 1;
+  border: 3px solid transparent;
+-webkit-border-image: -webkit-linear-gradient(
+  60deg,  
+    hsl(224, 85%, 66%),
+  hsl(269, 85%, 66%),
+  hsl(314, 85%, 66%),
+  hsl(359, 85%, 66%),
+  hsl(44, 85%, 66%),
+  hsl(89, 85%, 66%),
+  hsl(134, 85%, 66%),
+  hsl(179, 85%, 66%)
+);
+border-image-slice: 1;
+/* z-index: -3; */
+
+}
+
+
+
+.text{
+  font-family: 'Source Code Pro';
+  max-width: 600px;
+  z-index: 1;
+  color:rgb(240, 235, 235);
+  font-size:17px;
+  text-align: left;
+  padding:3px;
+/* z-index: 3; */
+
+
+
+
+
+  
+}
+h3{
+  text-align: center;
+
+
+}
+.hello-title{
+  font-family: 'Roboto', sans-serif;
+    color:   hsl(179, 85%, 66%);
+    padding-bottom: 8px;
+}
+p{
+  direction: ltr;
+
+}
+.startButton{
+    border: 2px solid    hsl(179, 85%, 66%);
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color:   hsl(179, 85%, 66%);
+    width: 200px;
+    height: 50px;
+    font-size: 1.8em;
+    border-radius: 5px;
+    top: 60vh;
+    bottom: 25px;
+    left: 0px;
+    right: 0px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: inherit; */
+  }
+  
+ 
+
+ .startButton:hover {
+  border: 2px solid #104F55;
+  background-color: rgba(365,365,365,0.5);
+  cursor: pointer;
+  color: #104F55;
+  opacity: .8;
+  transition: .3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  }
+
+
+  /* animation */
+
+
+  .text h3{
+    font-size:75px;
+    color: rgba(225,225,225, .1);
+   background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg"); 
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQ6apZMrrD1dqWh_0LnPdts5O9EytKOVVg&usqp=CAU); */
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: cover;
+    -webkit-background-clip:text;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  
+    @keyframes animate {
+      0%{
+        background-position: left 0px top 10px;
+      }
+      40%{
+        background-position: left 800px top 10px;
+    }
+  }
+
+/* .homePageLine{
+  border-left-width: 0;
+    border-right-width: 0;
+    border-bottom: 1px solid white;
+    border-image: linear-gradient(92.63deg,#c0e6ec 51.91%,#a5d4df 68.56%) 1 stretch;
+} */
+  
+
+
+  
+
+
+    
+  
+

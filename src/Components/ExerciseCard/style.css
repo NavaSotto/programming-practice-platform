@@ -1,0 +1,119 @@
+/*exercise card*/
+
+.cards_item {
+  border-right: 7px double #1e364e;
+  border-radius: 12px 14px 15px 10px;
+  height: 100%;
+  width: 100%;
+  flex-grow:1;
+  max-width: 560px;
+  min-height: 250px;
+  min-width: 440px;
+ 
+  position: relative;
+}
+.card {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  flex-grow:1
+
+  
+}
+
+.iconClass {
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+}
+.informationClass {
+  padding: 15px;
+}
+.difficultyClass {
+  padding: 20px;
+  
+}
+.easy{
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22%3E %3Cpath d=%22M21 3v18h-5V3h5zm-6 6v12h-5V9h5zm-6 6v6H3v-6h6zM20 4h-3v16h3V4zm-6 6h-3v10h3V10z%22 fill=%22%2314866d%22/%3E %3C/svg%3E");
+
+}
+.medium{
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22%3E %3Cpath d=%22M21 3v18h-5V3h5zm-6 6v12h-5V9h5zm-6 6v6H3v-6h6zM20 4h-3v16h3V4z%22 fill=%22%23ac6600%22/%3E %3C/svg%3E");
+}
+.hard{
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22%3E %3Cpath d=%22M21 3v18h-5V3h5zm-6 6v12h-5V9h5zm-6 6v6H3v-6h6z%22 fill=%22%23b32424%22/%3E %3C/svg%3E");
+}
+:any-link {
+  color: black;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.titleClass {
+  color: rgb(51, 124, 100);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.detailsClass {
+  color: rgb(74, 56, 121);
+  padding: 10px;
+}
+.execTypeClass {
+  color: rgb(14, 13, 13);
+  padding-right:  25px;
+  align-content: center;
+
+}
+
+.info1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.info2{
+
+  font-size: 13px;
+  font-family: cursive;
+  bottom: 0px;
+  left: 0;
+  display: flex;
+  justify-content: center
+
+
+ 
+
+}
+.tagsClass{
+  color: black;
+  font-size: 11px;
+  padding: 3px;
+  margin: 3px;
+  color: white;
+  border-radius: 40px;
+  padding: 0px 3px 0px 7px;
+  margin-right: 1px;
+  margin-bottom:5px;
+}
+.xBtn{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    z-index: 3;
+    border: none;
+    position:absolute;
+    font-size: 15px;
+    padding: 7px;
+    background:transparent;
+    color: tomato;
+}
