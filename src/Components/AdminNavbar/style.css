@@ -3,6 +3,7 @@
 .welcomeAdminClass {
   height: 200px;
   background-color: rgb(192, 245, 228);
+
 }
 
 
@@ -25,30 +26,35 @@
   outline: none;
   cursor: pointer;
   /* z-index: 2; */
- padding: 0px;
-margin-right:12px;
-padding-bottom: 2px;
+  padding: 0px;
+  margin-right: 12px;
+  padding-bottom: 2px;
 
 
 }
-.navToggle{
-position: fixed;
-background-color: transparent;
-border:none;
-z-index:12;
+
+.navToggle {
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  z-index: 12;
 
 }
+
 .navToggle.openNav span:first-child {
   transform: rotate(45deg) translate(4.4px, 4.4px);
 
 }
+
 .navToggle.openNav span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
+
 .navToggle.openNav span:last-child {
   transform: rotate(-45deg) translate(4.4px, -4.4px);
 }
+
 .navToggle span {
   position: relative;
   display: block;
@@ -62,6 +68,7 @@ z-index:12;
   padding-right: 17px;
 
 }
+
 .navToggle.openNav span {
   background: #333;
   font-size: 30px;
@@ -73,6 +80,7 @@ z-index:12;
 .navToggle span:last-child {
   margin-bottom: 0;
 }
+
 .wrapper {
   /* z-index: -1; */
   position: fixed;
@@ -83,18 +91,19 @@ z-index:12;
   right: 0;
   bottom: 0;
 }
+
 .mainNav {
   position: fixed;
   top: 0;
   right: 0;
   width: 170px;
   height: 100vh;
-  border-image: 
-  linear-gradient( cyan, transparent );
-background-color:#3e5570 ;  
-/* border-image:linear-gradient(60deg,#769aff 8.23%,#ffdd40 25.83%,#f19994 51.91%,#47cf73 68.56%) 1 stretch ; */
-box-shadow: -12px 0 10px -6px #9dd3ec;
-z-index: 4; 
+  border-image:
+    linear-gradient(cyan, transparent);
+  background-color: #3e5570;
+  /* border-image:linear-gradient(60deg,#769aff 8.23%,#ffdd40 25.83%,#f19994 51.91%,#47cf73 68.56%) 1 stretch ; */
+  box-shadow: -12px 0 10px -6px #9dd3ec;
+  z-index: 4;
   transform: translateX(100%);
   transition: transform 0.25s ease;
   overflow-y: auto;
@@ -103,12 +112,14 @@ z-index: 4;
   justify-items: center;
   justify-content: space-between;
   padding-top: 80px;
-  
+
+
 }
 
 .mainNav.openNav {
   transform: translateX(0%);
 }
+
 .mainNav .mainNavLink {
   display: block;
   padding: 2px;
@@ -116,35 +127,34 @@ z-index: 4;
   font-size: 20px;
   background-color: transparent;
   border: none;
-  color:rgb(240, 231, 240); 
+  color: rgb(240, 231, 240);
 }
+
 .mainNav .mainNavLink:hover {
-  color:rgb(22, 20, 22);
+  color: rgb(22, 20, 22);
 }
-.mainNav .mainNavLink:active {
-  color:rgb(240, 231, 240); 
-}
+
 
 .overlay {
   /*//X */
   position: fixed;
   left: 0;
   top: 0;
-   z-index: 1; 
+  z-index: 1;
   height: 0;
   width: 0;
   /* background-color: rgba(200, 21, 55, 0.7); */
   opacity: 0;
   transition: opacity 1s ease 0.1s;
+
 }
+
 .overlay.openNav {
   opacity: 3;
   width: 100%;
   height: 120%;
 }
+
 navlink {
-  color:white;
-}
-navLink:active {
-  color: rgb(138, 138, 193);
+  color: white;
 }

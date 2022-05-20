@@ -6,11 +6,11 @@
 
 const express = require("express"),
   app = express(),
-  PORT = process.env.PORT,
-//npm install cors
-//npm install cors --save
- cors = require("cors");
- require("dotenv").config({ path: ".env" });
+  PORT = process.env.PORT || 5000,
+  //npm install cors
+  //npm install cors --save
+  cors = require("cors");
+require("dotenv").config({ path: ".env" });
 
 //->we set db once and after put this kine in comments
 //require("./DL/scripts_data/script_setDB.js");

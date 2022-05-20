@@ -1,15 +1,15 @@
 import "./style.css";
 import React from "react";
 import axios from "axios";
-import { useContext,useState } from "react";
+import { useContext, useState } from "react";
 import { UserContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp(props) {
   const { setUserRegister } = useContext(UserContext);
-  const [submitButton, setSubmitButton] = useState(false)
-  const [Fields, setFields] = useState({firstName:false,lastName:false,emailAdress:false,password:false})
-const navigate=useNavigate();
+  const [submitButton, setSubmitButton] = useState(false);
+  const [Fields, setFields] = useState({ firstName: false, lastName: false, emailAdress: false, password: false });
+  const navigate = useNavigate();
 
 
 
@@ -18,42 +18,41 @@ const navigate=useNavigate();
     e.preventDefault();
     const form = e.target,
       values = getDataForm(form);
-      values.permission="user"
-    axios.post("http://localhost:5000/register",  values).then((res) => {
+    values.permission = "user";
+    axios.post("http://localhost:5000/register", values).then((res) => {
       console.log(res.data);
       console.log(values);
-    form.reset();
-    setUserRegister(values);
-    props.setUserStatus({newUser:false});
-    navigate("/userPage");
+      form.reset();
+      setUserRegister(values);
+      props.setUserStatus({ newUser: false });
+      navigate("/userPage");
 
 
     });
   }
 
-    function getDataForm(form) {
-      return Object.values(form).reduce((acc, curr) => {
-        let { value, name } = curr;
-        return name ? { ...acc, [name]: value } : acc;
-      }, {});
-    }
+  function getDataForm(form) {
+    return Object.values(form).reduce((acc, curr) => {
+      let { value, name } = curr;
+      return name ? { ...acc, [name]: value } : acc;
+    }, {});
+  }
 
-    function handleChange(e) {
-      if(e.target.value!='')
-      {
-        setFields({...Fields,[e.target.name]:true});
-       if(Object.values(Fields).every((element) => element==true))
+  function handleChange(e) {
+    if (e.target.value != '') {
+      setFields({ ...Fields, [e.target.name]: true });
+      if (Object.values(Fields).every((element) => element == true))
         setSubmitButton(true);
-      }
-      else{
-        setFields({...Fields,[e.target.name]:false});
-  
-      }
     }
-  
+    else {
+      setFields({ ...Fields, [e.target.name]: false });
+
+    }
+  }
+
 
   return (
-    <form onSubmit={updateSignUpData}>
+    <form onSubmit={updateSignUpData} autocomplete="off">
       <div >
         <h4 className="headerText">Join Us Today</h4>
         <div className="inputSectionSplit">

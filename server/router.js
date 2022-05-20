@@ -10,14 +10,14 @@ module.exports = (app) => {
   //==================exercise===================
 
   app.post("/exercise", async (req, res) => {
-    const token = req.headers.authorization
+    const token = req.headers.authorization;
 
     console.log("in 1");
     try {
       console.log("in router.js app.post");
       console.log(req.body);
 
-      let result = await ExerciseLogic.create(req.body,token);
+      let result = await ExerciseLogic.create(req.body, token);
       res.send(result);
     } catch (err) {
       console.log(err);
@@ -33,13 +33,13 @@ module.exports = (app) => {
   //   // get -http://localhost:5000/exercise or http://localhost:5000/exercise/<id>
 
   app.get("/exercises/:id?", async (req, res) => {
-   
+
 
     let result;
     try {
       //const token = req.headers.authorization
-     // console.log(token);
-     
+      // console.log(token);
+
       result = req.params.id
         ? await GeneralLogic.getSingleExercise(req.params.id)
         : await ExerciseLogic.read();
@@ -66,14 +66,14 @@ module.exports = (app) => {
 
   app.get("/exercisesCardsInLang/:langName", async (req, res) => {
     //console.log("in 4");
-   // const token = req.headers.authorization
-   // console.log(token);
+    // const token = req.headers.authorization
+    // console.log(token);
     let result;
     try {
       result = await ExerciseLogic.read(
         { prog_lang: `${req.params.langName}` },
         { title: 1, details: 1, difficulty: 1, exec_type: 1, icon: 1, tags: 1 },
-      // token
+        // token
       );
     } catch (error) {
       result = { status: 400, massage: error.message || error };
@@ -90,7 +90,7 @@ module.exports = (app) => {
     let result;
     try {
       const token = req.headers.authorization;
-      const data= req.body
+      const data = req.body;
       console.log(data);
 
       console.log(token);
@@ -101,7 +101,7 @@ module.exports = (app) => {
 
       // }
       // else
-      result = await ExerciseLogic.update(req.params.id, data,token);
+      result = await ExerciseLogic.update(req.params.id, data, token);
     } catch (error) {
       result = { status: 400, massage: error.message || error };
     }
@@ -112,11 +112,11 @@ module.exports = (app) => {
   //delete an exercise
   app.delete("/exercise/delete/:id", async (req, res) => {
     console.log("in 6");
-    const token = req.headers.authorization
+    const token = req.headers.authorization;
 
     let result;
     try {
-      result = await ExerciseLogic.delete(req.params.id,token);
+      result = await ExerciseLogic.delete(req.params.id, token);
     } catch (error) {
       result = { status: 400, massage: error.message || error };
     }
@@ -124,21 +124,9 @@ module.exports = (app) => {
     res.send(result);
   });
 
-  
+
   //==================lang===================
-  //get-http://localhost:5000/language
-  // app.get("/language", async (req, res) => {
-  //   console.log("in 10");
 
-  //   let result;
-  //   try {
-  //     result = await LangLogic.read();
-  //   } catch (error) {
-  //     result = { status: 400, massage: error.message || error };
-  //   }
-
-  //   res.send(result);
-  // });
   app.get("/language/:id?", async (req, res) => {
     console.log("in 1");
 
@@ -153,43 +141,7 @@ module.exports = (app) => {
 
     res.send(result);
   });
-  // app.get("/languages/:langName", async (req, res) => {
-  //   console.log("in 2");
 
-  //   let result;
-  //   try {
-  //     // result = req.params.langName;
-  //     result = await LangLogic.getIdLangByName({
-  //       langName: req.params.langName,
-  //     });
-  //   } catch (error) {
-  //     result = { status: 400, massage: error.message || error };
-  //   }
-
-  //   res.send(result);
-  // });
-  
-  // app.get("/languages/:idLang", async (req, res) => {
-  //   console.log("in 3");
-
-  //   let result;
-  //   try {
-  //     // result = req.params.langName;
-  //     result = await LangLogic.getLangById({
-  //       idLang: req.params.idLang,
-  //     });
-  //   } catch (error) {
-  //     result = { status: 400, massage: error.message || error };
-  //   }
-
-  //   res.send(result);
-  // });
-
-
-  //post-http://localhost:5000/language
-  //in body-{"langName": "c#",
-  //"icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css",
-  //"tags": ["loops", "arr"]}
 
   app.post("/language", async (req, res) => {
     console.log("in 11");
@@ -217,20 +169,20 @@ module.exports = (app) => {
 
     res.send(await UserLogic.getTokenStatus());
   });
-  app.get('/users',async(req,res)=>{
-    const token = req.headers.authorization
+  app.get('/users', async (req, res) => {
+    console.log(req);
+    const token = req.headers.authorization;
 
     res.send(await userLogic.readAllUsersData(token));
-  })
+  });
 
   // login
   app.post("/login", async (req, res) => {
     console.log("in 8");
-    try{
+    try {
       let result = await UserLogic.login(req.body);
       res.send(result);
-    }catch(err)
-    {
+    } catch (err) {
       console.log(err);
       res.send({
         status: 400,
@@ -238,10 +190,10 @@ module.exports = (app) => {
       });
     }
   });
-// {
-// "email":"israel@gmail.com",
-// "password":"israeli22"
-// }
+  // {
+  // "email":"israel@gmail.com",
+  // "password":"israeli22"
+  // }
   // register - V
   app.post("/register", async (req, res) => {
     console.log("in 9");

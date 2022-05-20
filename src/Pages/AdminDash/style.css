@@ -1,30 +1,35 @@
 /*admin-dash */
-.adminClass{
-  margin-top:120px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-color: #08081ad6;
-    width: 900px;
-    height: 100%;
+.adminClass {
+  margin-top: 120px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 900px;
+  height: 100%;
+  font-size: 50px;
+  
 
 
 }
+.blur {
+  backdrop-filter: blur(5px);
+  
+}
 
 
-.h2Class{
-    padding:0px;
-    padding-top:80px;
-    padding-bottom:80px;
+.h2Class {
+  padding: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-weight: bold;
-    font-size: 80px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
 
-    text-align: center;
-    background-image: linear-gradient(to right,#f19994 31.91%,#daa657 68.56%);
+  text-align: center;
+  background-image: linear-gradient(to right, #f19994 31.91%, #daa657 68.56%);
   -webkit-background-clip: text;
-color: transparent;
+  color: transparent;
 
 
 

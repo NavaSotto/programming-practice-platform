@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import { UserContext } from "../../App";
 import { useContext } from "react";
-import { useNavigate,useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 
@@ -11,14 +11,14 @@ import { useState } from "react";
 
 
 export default function SignIn() {
-  const { state  } = useLocation();
+  const { state } = useLocation();
   const [error, setError] = useState(false);
-  const context=useContext(UserContext);
-  
-  const navigate=useNavigate();
-  const [submitButton, setSubmitButton] = useState(false)
-  const [Fields, setFields] = useState({email:false,password:false})
-  const { userLogin ,setUserLogin} = useContext(UserContext);
+  const context = useContext(UserContext);
+
+  const navigate = useNavigate();
+  const [submitButton, setSubmitButton] = useState(false);
+  const [Fields, setFields] = useState({ email: false, password: false });
+  const { userLogin, setUserLogin } = useContext(UserContext);
   const { token, setToken } = useContext(UserContext);
 
 
@@ -30,25 +30,24 @@ export default function SignIn() {
       values = getDataForm(form);
     axios.post("http://localhost:5000/login", values).then((result) => {
       console.log(result);
+      console.log(result.data.token + "token");
       form.reset();
-      setUserLogin(result.data); 
+      setUserLogin(result.data);
       console.log(result.status);
-      if (result.data.status == 400) 
-      {
+      if (result.data.status == 400) {
         console.log("error");
         return setError(true);
       }
       sessionStorage.setItem("token", result.data.token);//to keep token in the local storage
 
       setToken(result.data.token);
-      if(state)
-      {
-        if(state.nextPage=='-1')
-        navigate(-1);
+      if (state) {
+        if (state.nextPage == '-1')
+          navigate(-1);
       }
-      else 
-      navigate('/');
-     
+      else
+        navigate('/');
+
     });
   }
 
@@ -59,32 +58,31 @@ export default function SignIn() {
     }, {});
   }
   function handleChange(e) {
-   
 
-    if(e.target.value!='')
-    {
-      setFields({...Fields,[e.target.name]:true});
-      if(Object.values(Fields).every((element) => element ==true))
+
+    if (e.target.value != '') {
+      setFields({ ...Fields, [e.target.name]: true });
+      if (Object.values(Fields).every((element) => element == true))
         setSubmitButton(true);
     }
-    else{
-      setFields({...Fields,[e.target.name]:false});
+    else {
+      setFields({ ...Fields, [e.target.name]: false });
 
     }
   }
-     
-   
- 
+
+
+
 
   return (
-    <form onSubmit={updateSignInData}>
+    <form onSubmit={updateSignInData} autocomplete="off">
       <div className="signInContainer">
-        {context.userRegister?<h5 className="headerText colorText">The registration process was successful!<br></br>Now log in</h5>
-       : <h4 className="headerText">Welcome Back</h4>}
+        {context.userRegister ? <h5 className="headerText colorText">The registration process was successful!<br></br>Now log in</h5>
+          : <h4 className="headerText">Welcome Back</h4>}
 
         <div className="inputSection">
           <input
-          onChange={handleChange}
+            onChange={handleChange}
             type="text"
             className="userName"
             required
@@ -101,11 +99,11 @@ export default function SignIn() {
             placeholder="Password"
             name="password"
           />
-          
+
 
         </div>
         <div>
-        {error? <p className="error">'email or password invalid'</p>:''}
+          {error ? <p className="error">'email or password invalid'</p> : ''}
 
         </div>
         <div className="formFooter">

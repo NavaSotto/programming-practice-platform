@@ -7,7 +7,7 @@ export default function AdminNavbar(props) {
   const { setNavbarClick } = props;
 
   function handleSidebar() {
-                           console.log(sideBar);
+    console.log(sideBar);
     setSideBar(!sideBar);
   }
 

@@ -34,7 +34,8 @@
   background:rgb(230, 218, 218);
 }
 .itemColor{
-  background-image: linear-gradient( #c0d9e4, #518a98), radial-gradient(circle at top left, #769aff 8.23%,#ffdd40 25.83%,#f19994 51.91%,#47cf73 68.56%);
+  background-image: linear-gradient( #c0d9e4, #6d90b3), radial-gradient(circle at top left, #769aff 8.23%,#ffdd40 25.83%,#f19994 51.91%,#47cf73 68.56%);
 
 }
+
 

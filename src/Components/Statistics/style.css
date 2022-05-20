@@ -1,31 +1,36 @@
-.statisticsClass{
+.statisticsClass {
   z-index: 1;
-  
+
   padding-top: 60px;
-  color:white;
+  color: white;
   align-content: center;
   align-items: center;
   text-align: center;
-  left:10px;
+  left: 10px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: #08081ad6;
   width: 100%;
+  backdrop-filter: blur(4px);
+
 }
-.h1Class{
-  color:white;
-  font-family: 'Enriqueta', arial, serif; font-size: 44px; font-weight: 400;  line-height: 70px; margin: 0 0 12px; text-align: center;
+
+.h1Class {
+  color: rgba(255, 255, 255, 0.711);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  padding-top: 30px;
 }
-.circleContaner{
+
+.circleContaner {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-grow: 3;
   flex-wrap: wrap;
   width: 900px;
-    text-align: center;
+  text-align: center;
 
 
 
@@ -40,7 +45,7 @@
 
 
 .item h3 {
-  text-align:center;
+  text-align: center;
   vertical-align: middle;
   position: absolute;
   line-height: 125px;
@@ -53,13 +58,14 @@
 }
 
 .item svg {
- -webkit-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
 .circle_animation {
-stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
-stroke-dashoffset: 440;
+  stroke-dasharray: 440;
+  /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
 }
 
 
@@ -69,24 +75,29 @@ stroke-dashoffset: 440;
   -webkit-animation: js 1s ease-out forwards;
   animation: js 1s ease-out forwards;
 }
+
 /*==========================*/
 .css .circle_animation {
   -webkit-animation: css 1s ease-out forwards;
   animation: css 1s ease-out forwards;
 }
+
 .c .circle_animation {
   -webkit-animation: js 1s ease-out forwards;
   animation: js 1s ease-out forwards;
 }
+
 /*==========================*/
 .python .circle_animation {
   -webkit-animation: css 1s ease-out forwards;
   animation: css 1s ease-out forwards;
 }
+
 .go .circle_animation {
   -webkit-animation: js 1s ease-out forwards;
   animation: js 1s ease-out forwards;
 }
+
 /*==========================*/
 .sql .circle_animation {
   -webkit-animation: css 1s ease-out forwards;
@@ -95,68 +106,74 @@ stroke-dashoffset: 440;
 
 
 @-webkit-keyframes js {
-to {
-  stroke-dashoffset: 80; /* 50% would be 220 (half the initial value specified above) */
-}
+  to {
+    stroke-dashoffset: 80;
+    /* 50% would be 220 (half the initial value specified above) */
+  }
 }
 
 @keyframes js {
-to {
-  stroke-dashoffset: 80;
+  to {
+    stroke-dashoffset: 80;
+  }
 }
-}
+
 @-webkit-keyframes css {
-to {
-  stroke-dashoffset: 160;
-}
+  to {
+    stroke-dashoffset: 160;
+  }
 }
 
 @keyframes css {
-to {
-  stroke-dashoffset: 160;
-}}
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
 @-webkit-keyframes python {
   to {
     stroke-dashoffset: 130;
   }
-  }
-  
-  @keyframes python {
+}
+
+@keyframes python {
   to {
     stroke-dashoffset: 130;
   }
-  }
-  @-webkit-keyframes c {
-    to {
-      stroke-dashoffset: 50;
-    }
-    }
-    
-    @keyframes c {
-    to {
-      stroke-dashoffset: 50;
-    }
-    }
-    @-webkit-keyframes go {
-      to {
-        stroke-dashoffset: 140;
-      }
-      }
-      
-      @keyframes go {
-      to {
-        stroke-dashoffset: 140;
-      }
-      }
-      @-webkit-keyframes sql {
-        to {
-          stroke-dashoffset: 77;
-        }
-        }
-        
-        @keyframes sql {
-        to {
-          stroke-dashoffset: 77;
-        }
-        }
+}
 
+@-webkit-keyframes c {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes c {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+@-webkit-keyframes go {
+  to {
+    stroke-dashoffset: 140;
+  }
+}
+
+@keyframes go {
+  to {
+    stroke-dashoffset: 140;
+  }
+}
+
+@-webkit-keyframes sql {
+  to {
+    stroke-dashoffset: 77;
+  }
+}
+
+@keyframes sql {
+  to {
+    stroke-dashoffset: 77;
+  }
+}

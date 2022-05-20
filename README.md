@@ -1,17 +1,17 @@
 
-# Trivia game
+# programming-practice-platform
 
-I developed a trivia game for the whole family with the goal of conveying the closures during the Corona period in a more pleasant and fun way
-The questions are sent by the user in an Excel format that can be downloaded from the landing page
-Then the game goes down to the computer and requires the entry of details and payment
-Gameplay: Combined questions are displayed in photos and videos and users have to choose the answer one after the other
-Of course there will be competition by presenting those winners who answered the correct answers the fastest
-The game can be played over and over again (the registry keeps the game details on the computer and only when building a new game does it require additional payment)
+     A platform for practicing code in different programming languages.
+     The exercises contain explanations, solutions and allow you to reach the level of a master.
+     End-to-end development, includes user management system where the Admin user can edit an exercise and  
+     registered users can view solutions.
+
 
 
 ## Technologies
 Work environment: visual studio
-Technologies: C # | wpf:
+Technologies: HTML, CSS, JS, bootstrap, Node.js, React, MongoDB.
+
 
 ## Demo
 

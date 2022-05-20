@@ -38,7 +38,7 @@ function App() {
           <Route path="/admin/exercise/"  element={<AdminExercise />}/>
           <Route path="/exercise/:id" element={<Exercise />} />
           <Route path="/userpage" element={<UserPage />} />
-          <Route path="*" component={NotFound} />
+          <Route path="*" component={<NotFound/>} />
         </Routes>
       </UserContext.Provider>
     </div>
